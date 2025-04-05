@@ -91,33 +91,34 @@ npx playwright test: Run all end-to-end tests.
 npx playwright show-report: View the test report.
 
 ### API Endpoints
-Authentication
-POST /api/auth/login: Log in a user.
-POST /api/auth/logout: Log out a user.
-GET /api/auth/validate-token: Validate the user's authentication token.
+**Authentication**
 
-Users
-POST /api/users/register: Register a new user.
-GET /api/users/me: Get the current user's details.
-Hotels
-GET /api/hotels: Search for hotels.
+- POST /api/auth/login: Log in a user.
+- POST /api/auth/logout: Log out a user.
+- GET /api/auth/validate-token: Validate the user's authentication token.
 
-Hotels
-GET /api/hotels: Search for hotels.
-GET /api/hotels/:id: Get details of a specific hotel.
+**Users**
+- POST /api/users/register: Register a new user.
+- GET /api/users/me: Get the current user's details.
 
-My Hotels (For Owners)
-POST /api/my-hotels: Add a new hotel.
-PUT /api/my-hotels/:id: Update hotel details.
-DELETE /api/my-hotels/:id: Delete a hotel.
-Bookings
-POST /api/my-bookings: Create a new booking.
-GET /api/my-bookings: Get all bookings for the current user.
+**Hotels**
+- GET /api/hotels: Search for hotels.
+- GET /api/hotels: Search for hotels.
+- GET /api/hotels/:id: Get details of a specific hotel.
+
+**My Hotels (For Owners)**
+- POST /api/my-hotels: Add a new hotel.
+- PUT /api/my-hotels/:id: Update hotel details.
+- DELETE /api/my-hotels/:id: Delete a hotel.
+
+**Bookings**
+- POST /api/my-bookings: Create a new booking.
+- GET /api/my-bookings: Get all bookings for the current user.
 
 ### Deployement:
 
 Deployed on render.com with database on mongodb atlas
-[deployed link](https://hotel-booking-app-yy0y.onrender.com/)
+- [Hotel booking app deployed link](https://hotel-booking-app-yy0y.onrender.com/)
 
 
 ### License
